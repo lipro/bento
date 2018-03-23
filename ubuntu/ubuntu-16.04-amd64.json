@@ -295,7 +295,7 @@
   ],
   "variables": {
     "box_basename": "ubuntu-16.04",
-    "build_timestamp": "{{isotime \"20060102150405\"}}",
+    "build_timestamp": "{{isotime \"20180228183633\"}}",
     "cpus": "1",
     "disk_size": "65536",
     "git_revision": "__unknown_git_revision__",
