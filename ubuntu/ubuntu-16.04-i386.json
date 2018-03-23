@@ -228,6 +228,7 @@
   "post-processors": [
     {
       "output": "../builds/{{user `box_basename`}}.{{.Provider}}.box",
+      "compression_level": "9",
       "type": "vagrant"
     }
   ],
