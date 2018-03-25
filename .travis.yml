@@ -16,7 +16,7 @@ matrix:
 
 branches:
   only:
-    - master
+    - /^lipro\/.*$/
 
 before_install:
   - wget https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip
