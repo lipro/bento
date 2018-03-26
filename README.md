@@ -2,19 +2,19 @@
 
 [![Build Status](http://img.shields.io/travis/lipro/docker-enabled-bento.svg)][travis]
 
-This is an inofficial fork of [Bento](http://chef.github.io/bento/) with some minor extensions to provide Docker enabled [Vagrant](https://www.vagrantup.com/) base boxes.
+This is an inofficial fork of [Bento](http://chef.github.io/bento/) with some minor extensions to provide Docker enabled [Vagrant](https://www.vagrantup.com/) base boxes. A subset of templates are built and published to the [li-pro.net](https://app.vagrantup.com/lipro) on Vagrant Cloud.
 
 [Bento](http://chef.github.io/bento/) is a project that encapsulates [Packer](https://www.packer.io/) templates for building [Vagrant](https://www.vagrantup.com/) base boxes. A subset of templates are built and published to the [bento org](https://app.vagrantup.com/bento) on Vagrant Cloud. The boxes also serve as default boxes for [kitchen-vagrant](https://github.com/test-kitchen/kitchen-vagrant/).
 
 ### Using Public Boxes
 
-Adding a bento box to Vagrant
+Adding a lipro box to Vagrant
 
 ```
 $ vagrant box add lipro/ubuntu-16.04-docker-ce
 ```
 
-Using a bento box in a Vagrantfile
+Using a lipro box in a Vagrantfile
 
 ```
 Vagrant.configure("2") do |config|
