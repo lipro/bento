@@ -265,6 +265,7 @@
         "DOCKER_CE_VERSION={{user `docker_ce_version`}}",
         "DOCKER_COMPOSE_VERSION={{user `docker_compose_version`}}",
         "DOCKER_DOCKERGEN_VERSION={{user `docker_dockergen_version`}}",
+        "DOCKER_DOCKERIZE_VERSION={{user `docker_dockerize_version`}}",
         "DOCKER_DOCKVIZ_VERSION={{user `docker_dockviz_version`}}",
         "DOCKER_MACHINE_VERSION={{user `docker_machine_version`}}",
         "DOCKER_PIPEWORK_VERSION={{user `docker_pipework_version`}}",
@@ -292,6 +293,7 @@
         "../_common/docker/dockviz.sh",
         "../_common/docker/pipework.sh",
         "../_common/docker/dockergen.sh",
+        "../_common/docker/dockerize.sh",
         "../_common/docker/cleanup.sh",
         "scripts/cleanup.sh",
         "../_common/minimize.sh"
@@ -308,6 +310,7 @@
     "docker_ce_version": "18.03.0",
     "docker_compose_version": "1.20.1",
     "docker_dockergen_version": "0.7.4",
+    "docker_dockerize_version": "0.6.1",
     "docker_dockviz_version": "0.5.0",
     "docker_machine_version": "0.14.0",
     "docker_pipework_version": "master",
