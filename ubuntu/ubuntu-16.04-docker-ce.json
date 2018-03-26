@@ -272,6 +272,7 @@
     {
       "environment_vars": [
         "DOCKER_BENCHSEC_VERSION={{user `docker_benchsec_version`}}",
+        "DOCKER_CADVISOR_VERSION={{user `docker_cadvisor_version`}}",
         "DOCKER_CE_VERSION={{user `docker_ce_version`}}",
         "DOCKER_COMPOSE_VERSION={{user `docker_compose_version`}}",
         "DOCKER_DOCKERGEN_VERSION={{user `docker_dockergen_version`}}",
@@ -307,6 +308,7 @@
         "../_common/docker/dockerize.sh",
         "../_common/docker/swarm.sh",
         "../_common/docker/bench-security.sh",
+        "../_common/docker/cadvisor.sh",
         "../_common/docker/cleanup.sh",
         "scripts/cleanup.sh",
         "../_common/minimize.sh"
@@ -321,6 +323,7 @@
     "cpus": "1",
     "disk_size": "65536",
     "docker_benchsec_version": "latest",
+    "docker_cadvisor_version": "0.29.0",
     "docker_ce_version": "18.03.0",
     "docker_compose_version": "1.20.1",
     "docker_dockergen_version": "0.7.4",
