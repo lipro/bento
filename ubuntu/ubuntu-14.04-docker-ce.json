@@ -269,6 +269,7 @@
         "DOCKER_DOCKERGEN_VERSION={{user `docker_dockergen_version`}}",
         "DOCKER_DOCKERIZE_VERSION={{user `docker_dockerize_version`}}",
         "DOCKER_DOCKVIZ_VERSION={{user `docker_dockviz_version`}}",
+        "DOCKER_HOSTTOOLS_VERSION={{user `docker_hosttools_version`}}",
         "DOCKER_MACHINE_VERSION={{user `docker_machine_version`}}",
         "DOCKER_PIPEWORK_VERSION={{user `docker_pipework_version`}}",
         "DOCKER_SWARM_VERSION={{user `docker_swarm_version`}}",
@@ -302,6 +303,7 @@
         "../_common/docker/bench-security.sh",
         "../_common/docker/cadvisor.sh",
         "../_common/docker/weave.sh",
+        "../_common/docker/host-tools.sh",
         "../_common/docker/cleanup.sh",
         "scripts/cleanup.sh",
         "../_common/minimize.sh"
@@ -322,6 +324,7 @@
     "docker_dockergen_version": "0.7.4",
     "docker_dockerize_version": "0.6.1",
     "docker_dockviz_version": "0.5.0",
+    "docker_hosttools_version": "master",
     "docker_machine_version": "0.14.0",
     "docker_pipework_version": "master",
     "docker_swarm_version": "1.2.8",
