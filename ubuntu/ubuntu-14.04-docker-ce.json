@@ -269,6 +269,7 @@
         "DOCKER_DOCKVIZ_VERSION={{user `docker_dockviz_version`}}",
         "DOCKER_MACHINE_VERSION={{user `docker_machine_version`}}",
         "DOCKER_PIPEWORK_VERSION={{user `docker_pipework_version`}}",
+        "DOCKER_SWARM_VERSION={{user `docker_swarm_version`}}",
         "HOME_DIR=/home/vagrant",
         "http_proxy={{user `http_proxy`}}",
         "https_proxy={{user `https_proxy`}}",
@@ -294,6 +295,7 @@
         "../_common/docker/pipework.sh",
         "../_common/docker/dockergen.sh",
         "../_common/docker/dockerize.sh",
+        "../_common/docker/swarm.sh",
         "../_common/docker/cleanup.sh",
         "scripts/cleanup.sh",
         "../_common/minimize.sh"
@@ -314,6 +316,7 @@
     "docker_dockviz_version": "0.5.0",
     "docker_machine_version": "0.14.0",
     "docker_pipework_version": "master",
+    "docker_swarm_version": "1.2.8",
     "git_revision": "__unknown_git_revision__",
     "headless": "",
     "http_proxy": "{{env `http_proxy`}}",
