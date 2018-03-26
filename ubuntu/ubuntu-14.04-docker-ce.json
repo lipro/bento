@@ -272,6 +272,7 @@
         "DOCKER_MACHINE_VERSION={{user `docker_machine_version`}}",
         "DOCKER_PIPEWORK_VERSION={{user `docker_pipework_version`}}",
         "DOCKER_SWARM_VERSION={{user `docker_swarm_version`}}",
+        "DOCKER_WEAVE_VERSION={{user `docker_weave_version`}}",
         "HOME_DIR=/home/vagrant",
         "http_proxy={{user `http_proxy`}}",
         "https_proxy={{user `https_proxy`}}",
@@ -300,6 +301,7 @@
         "../_common/docker/swarm.sh",
         "../_common/docker/bench-security.sh",
         "../_common/docker/cadvisor.sh",
+        "../_common/docker/weave.sh",
         "../_common/docker/cleanup.sh",
         "scripts/cleanup.sh",
         "../_common/minimize.sh"
@@ -323,6 +325,7 @@
     "docker_machine_version": "0.14.0",
     "docker_pipework_version": "master",
     "docker_swarm_version": "1.2.8",
+    "docker_weave_version": "2.2.1",
     "git_revision": "__unknown_git_revision__",
     "headless": "",
     "http_proxy": "{{env `http_proxy`}}",
