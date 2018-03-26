@@ -306,6 +306,6 @@
     "no_proxy": "{{env `no_proxy`}}",
     "preseed_path": "preseed.cfg",
     "template": "ubuntu-14.04-amd64",
-    "version": "TIMESTAMP"
+    "version": "14.04.5..TIMESTAMP"
   }
 }
