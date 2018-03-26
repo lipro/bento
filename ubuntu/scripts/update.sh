@@ -36,3 +36,7 @@ apt-get -y purge unattended-upgrades;
 
 # Upgrade all installed packages incl. kernel and kernel headers
 apt-get -y dist-upgrade -o Dpkg::Options::="--force-confnew";
+
+# Reboot into new kernel and delay for one minute
+reboot
+sleep 60
