@@ -332,7 +332,7 @@
     "docker_compose_version": "1.21.0",
     "docker_dockergen_version": "0.7.4",
     "docker_dockerize_version": "0.6.1",
-    "docker_dockviz_version": "0.5.0",
+    "docker_dockviz_version": "0.6.0",
     "docker_hosttools_version": "master",
     "docker_machine_version": "0.14.0",
     "docker_pipework_version": "master",
