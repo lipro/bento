@@ -320,7 +320,7 @@
     "docker_benchsec_version": "latest",
     "docker_cadvisor_version": "0.29.0",
     "docker_ce_version": "18.03.0",
-    "docker_compose_version": "1.20.1",
+    "docker_compose_version": "1.21.0",
     "docker_dockergen_version": "0.7.4",
     "docker_dockerize_version": "0.6.1",
     "docker_dockviz_version": "0.5.0",
