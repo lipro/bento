@@ -4,7 +4,7 @@
 
 This is an inofficial fork of [Bento](http://chef.github.io/bento/) with some minor extensions to provide Docker enabled [Vagrant](https://www.vagrantup.com/) base boxes. A subset of templates are built and published to the [li-pro.net](https://app.vagrantup.com/lipro) on Vagrant Cloud.
 
-[Bento](http://chef.github.io/bento/) is a project that encapsulates [Packer](https://www.packer.io/) templates for building [Vagrant](https://www.vagrantup.com/) base boxes. A subset of templates are built and published to the [bento org](https://app.vagrantup.com/bento) on Vagrant Cloud. The boxes also serve as default boxes for [kitchen-vagrant](https://github.com/test-kitchen/kitchen-vagrant/).
+Bento is a project that encapsulates [Packer](https://www.packer.io/) templates for building [Vagrant](https://www.vagrantup.com/) base boxes. A subset of templates are built and published to the [bento org](https://app.vagrantup.com/bento) on Vagrant Cloud. These published boxes serve as the default boxes for [kitchen-vagrant](https://github.com/test-kitchen/kitchen-vagrant/).
 
 ### Using Public Boxes
 
@@ -74,11 +74,38 @@ To build an Docker CE enabled Ubuntu 16.04 box for only the VirtualBox provider:
 $ bento build -only=virtualbox-iso ubuntu/ubuntu-16.04-docker-ce.json
 ```
 
+### Proprietary Templates
+
+Templates for operating systems only available via license or subscription are also available in the repository, these include but are not limited to: Mac OS X, Red Hat Enterprise Linux, and SUSE Linux Enterprise. As the ISOs are not publicly available the URL values will need to be overridden as appropriate. We rely on the efforts of those with access to licensed versions of the operating systems to keep these up-to-date.
+
+### Networking/Firewalls
+
+Most of the providers expect unrestricted access to networking in order to build as expected. We can't enumerate all possible firewall configurations but include some snippets below that might be useful to users.
+
+#### Windows
+
+```
+$VS = "Standardswitch"
+$IF_ALIAS = (Get-NetAdapter -Name "vEthernet ($VS)").ifAlias
+New-NetFirewallRule -Displayname "Allow incomming from $VS" -Direction Inbound -InterfaceAlias $IF_ALIAS -Action Allow
+```
+
+#### macOS / OSX
+
+See this [wiki page](https://github.com/chef/bento/wiki/macOS)
+
 ## Bugs and Issues
 
 Please use GitHub issues to report bugs, features, or other problems **with focus of changes in the lipro branches**.
 
 Please use GitHub issues from the original [Bento](http://chef.github.io/bento/) project to report all other bugs, features, or other problems.
+
+## Related projects
+
+* https://github.com/boxcutter
+* https://github.com/mcandre/packer-templates
+* https://github.com/timsutton/osx-vm-templates
+* https://github.com/ferventcoder/vagrant-windows-puppet/tree/master/baseboxes
 
 ## License & Authors
 
