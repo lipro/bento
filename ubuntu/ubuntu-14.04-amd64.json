@@ -239,7 +239,7 @@
       "http_directory": "http",
       "iso_checksum": "5E567024C385CC8F90C83D6763C6E4F1CD5DEB6F",
       "iso_checksum_type": "sha1",
-      "iso_url": "http://releases.ubuntu.com/14.04/ubuntu-14.04.5-server-amd64.iso",
+      "iso_url": "{{user `mirror`}}/{{user `mirror_directory`}}/{{user `iso_name`}}",
       "output_directory": "../builds/packer-{{user `template`}}-hyperv",
       "ram_size": "{{user `memory`}}",
       "shutdown_command": "echo 'vagrant' | sudo -S shutdown -P now",
