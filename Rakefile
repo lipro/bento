@@ -48,7 +48,9 @@ def check_env
 end
 
 def providers
-  if config['providers']
+  if not ENV["PACKER_ONLY_PROVIDERS"].nil?
+    ENV['PACKER_ONLY_PROVIDERS']
+  elsif config['providers']
     config['providers'].join(',')
   else
     puts "No Providers Specified."
