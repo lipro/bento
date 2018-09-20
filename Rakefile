@@ -34,6 +34,7 @@ def build_cmd(template)
   cmd.insert(2, "--only #{providers}")
   cmd.insert(2, "--mirror #{ENV['PACKER_MIRROR']}") if ENV["PACKER_MIRROR"]
   cmd.insert(2, "--version #{ENV['BENTO_VERSION']}")
+  cmd.insert(2, "--single") if ENV["PACKER_DISABLE_PARALLEL"]
   cmd.join(" ")
   a_to_s(cmd)
 end
