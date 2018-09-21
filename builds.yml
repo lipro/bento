@@ -1,29 +1,11 @@
 ---
 public:
-- 'centos-7.5'
-- 'centos-6.10'
-- 'centos-5.11'
 - 'ubuntu-18.04'
 - 'ubuntu-16.04'
 - 'ubuntu-14.04'
-- 'debian-9.5'
-- 'debian-8.11'
-- 'oracle-7.5'
-- 'oracle-6.10'
-- 'fedora-28'
-- 'fedora-27'
-- 'opensuse-leap-42.3'
-- 'opensuse-leap-15.0'
-- 'freebsd-11.2'
-- 'freebsd-10.4'
-- 'hardenedbsd-11'
-- 'centos-6.10-i386'
-- 'centos-5.11-i386'
-- 'oracle-6.10-i386'
+- 'ubuntu-18.04-i386'
 - 'ubuntu-16.04-i386'
 - 'ubuntu-14.04-i386'
-- 'debian-8.11-i386'
-- 'debian-9.5-i386'
 
 slugs:
   'centos-7': 'centos-7.5'
@@ -37,3 +19,8 @@ slugs:
   'freebsd-10': 'freebsd-10.4'
   'opensuse-leap-42': 'opensuse-leap-42.3'
   'opensuse-leap-15': 'opensuse-leap-15.0'
+
+providers:
+- qemu
+- virtualbox-iso
+- vmware-iso
