@@ -55,6 +55,12 @@
           "{{.Name}}",
           "--cpus",
           "{{ user `cpus` }}"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--audio",
+          "none"
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
