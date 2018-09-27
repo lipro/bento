@@ -298,6 +298,7 @@
         "../_common/vmware.sh",
         "../_common/parallels.sh",
         "scripts/hyperv.sh",
+        "../_common/reboot.sh",
         "scripts/cleanup.sh",
         "../_common/minimize.sh"
       ],
