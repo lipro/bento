@@ -64,7 +64,11 @@ def a_to_s(*args)
 end
 
 def config
-  YAML.load(File.read("builds.yml"))
+  if providers.include?( "hyperv-iso" )
+    YAML.load(File.read("builds-hyperv.yml"))
+  else
+    YAML.load(File.read("builds.yml"))
+  end
 end
 
 def clean_array(*args)
