@@ -11,7 +11,7 @@ task :do_all do
       sh "bento test"
       unless ENV["BENTO_AUTO_RELEASE"].nil?
         sh "bento upload"
-        sh "bento release #{template} #{ENV["BENTO_VERSION"]}"
+        sh "bento release #{box_name(template)} #{ENV["BENTO_VERSION"]}"
       end
     end
   end
